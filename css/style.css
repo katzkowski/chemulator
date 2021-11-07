@@ -1,0 +1,381 @@
+/* chemulator webpage custom css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    --color-primary: var(--color-gradient-right);
+    --color-secondary: var(--color-gradient-left);
+    --color-near-white: #f0f4f7;
+    --color-background-grey: #f8f9fa;
+    --color-black: #3e4d54;
+    --color-blue: #2f3676;
+    --color-gradient-right: #4ec3b8;
+    --color-gradient-left: #4e9cb8;
+    --background-gradient: linear-gradient(to right, var(--color-gradient-left),var(--color-gradient-right));
+    font-family: "Raleway", sans-serif;
+}
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+
+/* ---- Navbar ---*/
+#nav-bar {
+    position: sticky;
+    top: 0rem;
+    z-index: 10;
+    background: var(--background-gradient);
+}
+.navbar {
+    padding: 0 !important;
+    transition: 1s;
+}
+.color-nav {
+    /* used by script on scroll to change nav color */
+    background-color: var(--color-black);
+    padding: 0 !important;
+    transition: 1s;
+}
+.gradient-nav {
+    background: none;
+    padding: 0 !important;
+    transition:  1s;
+}
+/* Logo resize */
+.navbar-brand img {
+    height: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+.navbar-nav {
+    margin-right: 3rem;
+    transition: 0.5s;
+}
+.navbar-nav li {
+    padding: 0 1rem;
+    padding-top: 0rem;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    transition: 0.5s;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-blue) !important;
+    transition: 0.5s;
+}
+.color-nav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-gradient-right) !important;
+    transition: 0.6s;
+}
+.navbar-brand {
+    color: #fff !important;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0t;
+}
+.navbar-toggler {
+    outline: none !important;
+    margin-right: 0.5rem;
+}
+.collapsing .nav-item a.nav-link, .show .nav-item a.nav-link {
+    float: left;
+    margin-left: 1rem;
+}
+
+/* --------- Banner ---------- */
+#banner {
+    background: var(--background-gradient);
+    color: #fff;
+    padding-top: 5%;
+}
+#banner h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3.5rem;
+    color: var(--color-blue);
+}
+.banner-text {
+    font-size: 1.44rem;
+}
+#banner img {
+    margin-top: -2.15rem;
+}
+#banner-left {
+    margin-bottom: 4rem;
+}
+#banner-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    max-width: 100%;
+}
+#banner .btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 40%;
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid var(--color-blue);
+    border-radius: 14px;
+    box-shadow: none;
+    background: var(--color-blue);
+    transition: 0.5s;
+}
+#banner .btn-primary:hover {
+    border: 1px solid var(--color-gradient-right);
+    border-radius: 20px;
+    box-shadow: 3px 6px 0px var(--color-blue);
+    background: var(--color-gradient-right);
+    transition: 0.5s;
+}
+#banner a .btn-secondary {
+    color: var(--color-black);
+}
+#banner .btn-secondary {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 40%;
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--color-black);
+    border-radius: 14px;
+    box-shadow: none;
+    background: none;
+    transition: 0.5s;
+}
+#banner .btn-secondary:hover {
+    border: 1px solid var(--color-near-white);
+    border-radius: 40px;
+    box-shadow: 3px 6px 0px var(--color-black);
+    background: var(--color-near-white);
+    transition: 0.5s;
+}
+.img-fluid {
+    margin-top: 2rem;
+    height: 100%;
+}
+.bottom-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.top-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+/* ---------- Android --------- */
+#features {
+    padding: 50px 0;
+}
+.features {
+    padding: 20px;
+}
+.feature-text {
+    margin: 20px;
+    width: auto;
+    font-size: 1.2rem;
+}
+.feature-text h2 {
+    font-size: 2rem;
+}
+.feature-text ul {
+    list-style: disc;
+    color: var(--color-gradient-right);
+}
+.feature-text li {
+    margin-top: 1rem;
+}
+.feature-text span {
+    color: black;
+}
+.nav-pills .nav-link:not(.active) {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border: 1px solid var(--color-blue) !important;
+    border-radius: 14px;
+    color: var(--color-blue);
+    transition: 0.5s;
+}
+.nav-pills .nav-link.active {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border: 1px solid var(--color-blue) !important;
+    border-radius: 14px;
+    background: var(--color-blue) !important;
+    transition: 0.5s;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border: 1px solid var(--color-blue) !important;
+    box-shadow: inset 6rem 0 0 0 var(--color-blue);
+    color: #fff;
+    background: none !important;
+    transition: 0.5s;
+}
+.tab-pane.show.active {
+    transition: 0.5s;
+}
+
+.title::after { /* Gradient nach Überschrift */
+    height: 8px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 60px;
+    content: '';
+    background: var(--background-gradient);
+    transform: translateY(23px);
+}
+h1 .title-white {
+    margin-top: 0;
+}
+.title-white::after { /* Gradient nach Überschrift */
+    height: 8px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 60px;
+    content: '';
+    background: var(--color-near-white);
+    transform: translateY(23px);
+}
+#desktop .btn-primary, #download .btn-primary, #contact .btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: none;
+    background: var(--color-blue);
+    transition: 0.5s;
+}
+#download .btn-primary {
+    margin-bottom: 0.25rem;
+}
+#desktop .btn-primary:hover, #download .btn-primary:hover,#contact .btn-primary:hover {
+    border-radius: 40px;
+    box-shadow: 3px 6px 0px var(--color-blue);
+    background: var(--color-gradient-right);
+    transition: 0.5s;
+    text-decoration: none;
+}
+#download .btn-primary.left, #download a {
+    margin-left: 0;
+    margin-right: 1rem;
+    display: block;
+    text-align: center;
+    max-width: 12rem;
+}
+
+
+/* ----------- Desktop -------------*/
+#desktop {
+    background-color: var(--color-background-grey);
+}
+#desktop img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+#desktop p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+#desktop a:hover {
+
+}
+
+/* ------- Download -----*/
+#download {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+#chem-desktop {
+    max-width: 100%;
+    height: auto;
+}
+#download .card-text .text-muted {
+    margin-top: 2rem;
+}
+#download .card-img-top {
+    max-height: 12rem;
+    float: left;
+    margin-bottom: 1rem;
+}
+#download .card {
+    margin: 0.5rem 0.5rem;
+}
+#download a {
+  text-decoration: none;
+}
+
+/* ---- Kontakt --- */
+#contact {
+    background: var(--background-gradient);
+    color: #fff;
+}
+#contact h1 {
+
+}
+#contact h1::after {
+    background: var(--color-blue);
+}
+#contact form {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+}
+.col-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----- Footer ------*/
+#footer {
+    padding-top: 3rem;
+    background: var(--background-gradient);
+    color: #fff;
+}
+#footer img {
+    height: 3rem;
+    width: 4rem;
+}
+#footer p#logo {
+    color: #fff !important;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/*------- Copyright -------*/
+.copyright {
+    padding-top: 2%;
+    font-size: 15px;
+    text-align: center;
+}
+.copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+.copyright a:hover {
+    text-decoration: none;
+    color: var(--color-blue);
+    transition: 0.5s;
+}

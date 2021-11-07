@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>chemulator | Einfach chemische Formeln berechnen</title>
+    <meta
+      name="description"
+      content="Mit dem chemulator kannst du einfach und kostenlos eine Vielzahl von chemischen Berechnungen durchführen. Verfügbar für Android und Desktop."
+    />
+
+    <link rel="canonical" href="https://chemulator.de" />
+
+    <meta
+      property="og:image"
+      content="https://chemulator.de/svg/logo_1749_shadow.svg"
+    />
+    <meta property="og:url" content="https://chemulator.de" />
+    <meta
+      property="og:title"
+      content="chemulator | Einfach chemische Formeln berechnen"
+    />
+    <meta
+      property="og:description"
+      content="Mit dem chemulator kannst du einfach und kostenlos eine Vielzahl von chemischen Berechnungen durchführen. Verfügbar für Android und Desktop."
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#3e4d54" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+
+    <!-- Chrome bar theme for Android devices -->
+    <meta name="theme-color" content="#3e4d54" />
+  </head>
+
+  <body>
+    <!-- Navbar Menu  -->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo"
+              src="svg/logo_1749_shadow.svg"
+              alt="chemulator Logo"
+            />chemulator
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Android</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#desktop">Desktop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#download">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Über</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Banner Hero section -->
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" id="banner-left">
+            <h1>Einfach chemische Formeln berechnen</h1>
+            <p class="banner-text">
+              Mit dem chemulator kannst du einfach und kostenlos eine Vielzahl
+              von chemischer Berechnungen durchführen.
+            </p>
+            <div id="banner-buttons">
+              <a href="#features"
+                ><button type="button" class="btn btn-secondary" name="button">
+                  Mehr erfahren
+                </button></a
+              >
+              <a href="#download"
+                ><button type="button" class="btn btn-primary" name="button">
+                  Download
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="svg/android_landing_new.svg"
+              alt="chemulator Android App"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Background wave Hero -->
+      <img src="images/ground@-min.png" class="bottom-img" alt="" />
+    </section>
+
+    <!-- Services -->
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center title">Android-Version</h1>
+          </div>
+        </div>
+        <!-- feature section with tabs -->
+        <ul
+          class="nav justify-content-center nav-pills mb-3"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="pills-schritt1-tab"
+              data-toggle="pill"
+              href="#pills-home"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+              >Schritt 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-schritt2-tab"
+              data-toggle="pill"
+              href="#pills-profile"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              >Schritt 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-schritt3-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              >Schritt 3</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Tab 1 -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-schritt1-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md">
+                  <img
+                    src="svg/android_main_activity.svg"
+                    alt="Hauptansicht der chemulator Android App"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md">
+                  <div class="feature-text">
+                    <h2 class="text-left">Schritt 1: Formel auswählen</h2>
+                    <ul>
+                      <li>
+                        <span
+                          >Wähle aus eine der 8 Kategorien aus, um sie
+                          aufzuklappen</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Du kannst nun eine der Formeln auswählen und diese
+                          berechnen</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Falls du eine Formel nicht gefunden hast, kannst du
+                          weitere Kategorien ausklappen</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Scrolle, um alle Formeln der ausgeklappten Kategorien
+                          zu sehen</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-schritt2-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md">
+                  <img
+                    src="svg/android_formula_activity.svg"
+                    alt="Bestimmungsansicht einer Formel in der chemulator Android App"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md">
+                  <div class="feature-text">
+                    <h2>Schritt 2: Bestimmung auswählen</h2>
+                    <ul>
+                      <li><span>Passe die Anzahl der Bestimmungen an</span></li>
+                      <li>
+                        <span
+                          >Erstelle eine neue Bestimmung, indem du auf das
+                          Plus-Icon tippst</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Lösche eine Bestimmung durch Wischen von rechts nach
+                          links</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Du kannst mit bis zu fünf Bestimmungen gleichzeitig
+                          rechnen - oder du verwendest nur eine</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Der Mittelwert wird automatisch berechnet, wenn alle
+                          Bestimmungen ein Ergebnis haben</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Um die Werte aller Bestimmungen auf einmal zu
+                          Löschen, tippe auf das Zurücksetzen-Icon oben
+                          rechts</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-schritt3-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md">
+                  <img
+                    src="svg/android_calculate_activity.svg"
+                    alt="Berechnung einer Formel in der chemulator Android App"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md">
+                  <div class="feature-text">
+                    <h2>Schritt 3: Werte eingeben</h2>
+                    <ul>
+                      <li>
+                        <span>Befülle die Felder mit den richtigen Werten</span>
+                      </li>
+                      <li>
+                        <span>Zu jedem Feld ist eine Einheit angegeben</span>
+                      </li>
+                      <li>
+                        <span
+                          >Du kannst auch negative oder Dezimalwerte
+                          eingeben</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Das Ergebnis wird automatisch berechnet, wenn alle
+                          Felder korrekt ausgefüllt sind</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Um die Werte aller Felder auf einmal zu löschen,
+                          tippe auf das Zurücksetzen-Icon</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desktop Version -->
+    <section id="desktop">
+      <img src="images/background_wave_small@2x.png" class="top-img" />
+      <div class="container">
+        <h1 class="title text-center">Desktop-Version</h1>
+        <div class="row">
+          <div class="col-sm-12">
+            <img
+              id="chem-desktop"
+              src="svg/desktop_main.svg"
+              class="img-fluid"
+              alt="chemulator Desktop Anwendung"
+            />
+            <p class="text-center">
+              Der chemulator ist auch als Desktopanwendung verfügbar und läuft
+              auf Windows 10.
+            </p>
+
+            <a href="#download"
+              ><button type="button" class="btn btn-primary" name="button">
+                Download
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/background-wave-bottom@2x.png"
+        class="bottom-img"
+        alt=""
+      />
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+      <div class="container">
+        <h1 class="title text-center">Download</h1>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  class="card-img-top"
+                  src="svg/android_logo_phone.svg"
+                  alt="chemulator für Android"
+                />
+                <h4 class="card-title">Android</h4>
+                <p class="card-text">
+                  Lade dir <b>kostenlos</b> die neueste chemulator-Version für
+                  Android aus dem Google Play Store herunter.
+                </p>
+
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.chemulator"
+                  role="button"
+                  class="btn btn-primary"
+                  name="button"
+                  >Google Play</a
+                >
+                <p class="card-text">
+                  <small class="text-muted">Version 1.1</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img
+                  class="card-img-top"
+                  src="svg/desktop_logo_green.svg"
+                  alt="chemulator für Desktop"
+                />
+                <h4 class="card-title">Desktop</h4>
+                <p class="card-text">
+                  Lade dir <b>kostenlos</b> die neueste chemulator-Version für
+                  Desktop herunter.
+                </p>
+                <a
+                  href="downloads/chemulator.exe"
+                  role="button"
+                  class="btn btn-primary"
+                  name="button"
+                  >Desktop</a
+                >
+                <p class="card-text">
+                  <small class="text-muted">Version: 1.0</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+      <img src="images/background_wave_small@2x.png" class="top-img" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-centered">
+            <h1 class="title-white text-center">Über</h1>
+            <div>
+              chemulator ist ein persönliches Projekt von zwei
+              Informatikstudenten, welches im Jahr 2019 während des 2. Semesters
+              neben der Uni entstanden ist. Das Projekt wird aktuell nicht mehr
+              weiter entwickelt. Die Android- und Desktopanwendung stellen wir
+              weiterhin auf dieser Website zur Verfügung.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p id="logo">
+              <img src="svg/logo_1749_shadow.svg" alt="chemulato Logo" />
+              <span>chemulator</span>
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="copyright">
+              Copyright © 2019. Bestimmte Rechte vorbehalten.
+            </p>
+          </div>
+          <div class="col">
+            <p class="copyright">personal project, not a company</p>
+          </div>
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <!-- Smooth Scroll js -->
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <!-- Add Class to nav js -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() >= 700) {
+          $("nav").removeClass("gradient-nav");
+          $("nav").addClass("color-nav");
+        } else {
+          $("nav").removeClass("color-nav");
+          $("nav").addClass("gradient-nav");
+        }
+      });
+    </script>
+  </body>
+</html>
